@@ -47,6 +47,9 @@ import { MatCardModule } from '@angular/material';
   providers: [{ provide: MatDialogRef, useValue: {} },
     { provide: MAT_DIALOG_DATA, useValue: [] },
     { provide: LOCALE_ID, useValue: 'fr-CA' }],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    CommentFormComponent,
+  ]
 })
 export class AppModule { }

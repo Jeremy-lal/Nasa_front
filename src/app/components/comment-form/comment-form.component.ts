@@ -12,19 +12,20 @@ import { MatDialogRef } from '@angular/material';
 })
 export class CommentFormComponent implements OnInit {
 
-  currentUser: User;
+  // currentUser: User;
+  id = 1;
 
   commentForm = this.fb.group({
     title: [''],
     content: [''],
-    user_id: [this.currentUser.id]
+    user_id: [this.id]
   });
 
   constructor(private fb: FormBuilder, public dialogRef: MatDialogRef<CommentFormComponent>, private commentService: CommentService,
               private userService: UserService) { }
 
   ngOnInit() {
-    this.currentUser = this.userService.currentUser;
+    // this.currentUser = this.userService.currentUser;
   }
 
   sendComment(): void {
