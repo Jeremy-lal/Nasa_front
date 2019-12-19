@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CommentService } from 'src/app/shared/services/comment.service';
+import { User } from 'src/app/shared/models/user';
 
 @Component({
   selector: 'app-forum-page',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ForumPageComponent implements OnInit {
 
-  constructor() { }
+  comments: Comment[];
+
+  constructor(private commentService: CommentService) { }
 
   ngOnInit() {
+    this.commentService.getComment().subscribe( (data: Comment[]) => {
+      this.comments = data;
+    });
   }
 
 }

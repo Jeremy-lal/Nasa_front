@@ -1,0 +1,21 @@
+<form [formGroup]="commentForm" (ngSubmit)="sendComment()">
+
+    <div class="container">
+      <h2>Ajouter un commentaire</h2>
+      <div>
+        <label>
+          Titre du commentaire:
+          <input type="text" formControlName="title">
+        </label>
+      </div>
+      <div>
+        <label>
+          Contenu:
+          <textarea type="text" formControlName="content"></textarea>
+        </label>
+      </div>
+  
+      <button type="submit"> Ajouter </button>
+    </div>
+  </form>
+  

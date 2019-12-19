@@ -1,11 +1,12 @@
 <section>
     <app-nav-bar></app-nav-bar>
 
+    <app-open-comment-form></app-open-comment-form>
+
     <h1>acceuil</h1>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, facere. Sapiente suscipit animi deleniti necessitatibus deserunt voluptates quasi sequi in ad id. Atque eum iusto, quis facilis doloremque provident deserunt?</p>
     
-    
-
+    <app-comment [comment]="comment" *ngFor='let comment of comments'></app-comment>
 
     <p>forum</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero rerum mollitia maiores odio commodi ipsum? Ducimus adipisci libero quis at? Rem provident dignissimos eius officiis quae ea autem tempora nemo.</p>
