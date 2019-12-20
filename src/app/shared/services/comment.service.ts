@@ -7,15 +7,16 @@ import { Observable } from 'rxjs';
 })
 export class CommentService {
 
-  static URL = '#';
+  static URL = 'http://localhost:8080/comments/';
 
-  toUpdate = false;
+  toComment = false;
   commentsCommun: Comment[];
+  commentCliked: Comment;
 
   constructor(private http: HttpClient) { }
 
   getComment(): Observable<Comment[]> {
-    return this.http.get<Comment[]>(CommentService.URL);
+    return this.http.get<Comment[]>(CommentService.URL );
   }
 
   createComment(newComment: Comment) {

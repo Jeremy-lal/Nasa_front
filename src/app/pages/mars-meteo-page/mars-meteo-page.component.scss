@@ -1,6 +1,23 @@
 section {
-    margin: 0 10% 0 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+section app-nav-bar, section .marge {
+    margin: 0 10% 0 10%;
+}
+section app-nav-top {
+    padding: 1rem 0 0 1rem;
+}
+app-nav-top {
+    margin-bottom: 2rem;
+    width: 100%;
+    border: 2px solid blue;
+    
+}
+
+img {
+    width: 70%;
+    height: 500px;
 }

@@ -1,11 +1,15 @@
 section {
-    margin: 0 10% 0 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-
-app-open-comment-form {
-    border: 2px solid blue;
+section app-nav-bar, section .marge {
+    margin: 0 10% 2% 10%;
+}
+section app-nav-top {
+    padding: 1rem 0 0 1rem;
+}
+app-nav-top {
+    margin-bottom: 2rem;
 }

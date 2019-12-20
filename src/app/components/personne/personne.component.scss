@@ -1,0 +1,37 @@
+.pers {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    border: 2px solid white;
+    width:100%;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .identity, .action {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+  
+  .action {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .action div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  i {
+    margin-right: 2rem;
+    cursor: pointer;
+  }pointer
+  
+  p {
+    margin-left: 0.5rem;
+    padding: 1rem;
+  }
+  

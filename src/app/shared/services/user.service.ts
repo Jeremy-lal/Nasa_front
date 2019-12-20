@@ -8,12 +8,12 @@ import { Observable } from 'rxjs';
 })
 export class UserService {
 
-  static URL = '#';
+  static URL = 'http://localhost:8080/users/';
   currentUser: User;
 
   constructor(private http: HttpClient) { }
 
-  getUser(): Observable<User[]> {
+  getUsers(): Observable<User[]> {
     return this.http.get<User[]>(UserService.URL);
   }
 

@@ -5,6 +5,7 @@ import { MarsInfoPageComponent } from './pages/mars-info-page/mars-info-page.com
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AcceuilComponent } from './pages/acceuil/acceuil.component';
+import { AdminComponent } from './pages/admin/admin.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'info', component: MarsInfoPageComponent},
   { path: 'meteo', component: MarsMeteoPageComponent},
   { path: 'photo', component: MarsPhotoPageComponent},
-  { path: 'forum', component: ForumPageComponent}
+  { path: 'forum', component: ForumPageComponent},
+  { path: 'admin', component: AdminComponent},
 
 ];
 

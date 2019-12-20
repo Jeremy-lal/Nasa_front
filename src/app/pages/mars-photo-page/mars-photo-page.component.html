@@ -1,7 +1,11 @@
 <section>
-    <app-nav-bar></app-nav-bar>
 
-
-    <p>mars-photo-page works!</p>
+    <app-nav-top></app-nav-top>
     
+    <div class="marge">
+        <app-nav-bar></app-nav-bar>
+        <img [src]="image?.img_src" alt="photo" *ngFor="let image of FirstsPictures">
+    </div>
+
+
 </section>

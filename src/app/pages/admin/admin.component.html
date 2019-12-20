@@ -3,7 +3,9 @@
     <app-nav-bar></app-nav-bar>
 
     <div class="marge">
-        <img src="https://www.jpl.nasa.gov/edu/images/news/mars_interior.gif" alt="mars">
+
+        <app-personne [pers]="pers" *ngFor="let pers of listUsers"></app-personne>
+        
     </div>
 
 </section>

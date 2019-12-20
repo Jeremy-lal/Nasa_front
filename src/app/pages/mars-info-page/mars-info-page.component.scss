@@ -1,9 +1,18 @@
 section {
-    margin: 0 10% 0 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-bottom: 2rem;
+}
+
+section app-nav-bar, section .marge {
+    margin: 0 10% 0 10%;
+}
+section app-nav-top {
+    padding: 1rem 0 0 1rem;
+}
+app-nav-top {
+    margin-bottom: 2rem;
 }
 
 h1 {
@@ -14,15 +23,20 @@ h1 {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: white;
-    margin: 1rem;
+    margin: 2rem;
+    font-weight: bold;
 }
 p {
     color: white;
     font-size: 1.5rem;
+    text-align: justify;
 }
-
+.marge {
+    display: flex;
+    flex-direction: column;
+}
 img {
     border-radius: 5px;
     margin: 1rem 0 1rem 0;
@@ -31,7 +45,7 @@ img {
 
 .img1 {
     height: 400px;
-    width: 100%;
+    width: 90%;
 }
 
 .img2 {

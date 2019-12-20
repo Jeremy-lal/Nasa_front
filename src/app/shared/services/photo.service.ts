@@ -6,7 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PhotoService {
 
-  static URLphoto = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY';
+  // tslint:disable-next-line: max-line-length
+  static URLphoto = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=SkWDeXnO7APX1zMU84pV4W9xo72dflvSGvlf2kkV';
 
   constructor(private http: HttpClient) { }
 

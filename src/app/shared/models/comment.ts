@@ -2,8 +2,9 @@ import { User } from './user';
 
 export class Comment {
   id: number;
-  user_id: User;
+  user: User;
   createAt: Date;
   title: string;
   content: string;
+  comments: Comment[];
 }

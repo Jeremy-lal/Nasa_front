@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 2px solid green;
+}
+
+img {
+    height: 100px;
+}
+.img2 {
+    padding-right: 3rem;
+}
+
+.image {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid blue;
+}
+
+.connexion {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    border: 2px solid red;
+}
+
+i {
+    font-size: 3rem;
+    margin: 1.5rem;
+    color: white;
+    cursor: pointer;
+  }

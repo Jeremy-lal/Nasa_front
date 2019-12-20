@@ -13,12 +13,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { CommentFormComponent } from './components/comment-form/comment-form.component';
 import { UserFormComponent } from './components/user-form/user-form.component';
 import { OpenCommentFormComponent } from './components/open-comment-form/open-comment-form.component';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommentComponent } from './components/comment/comment.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material';
+import { NavTopComponent } from './components/nav-top/nav-top.component';
+import { AdminComponent } from './pages/admin/admin.component';
+import { PersonneComponent } from './components/personne/personne.component';
+import { ConnexionComponent } from './components/connexion/connexion.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,11 @@ import { MatCardModule } from '@angular/material';
     CommentFormComponent,
     UserFormComponent,
     OpenCommentFormComponent,
-    CommentComponent
+    CommentComponent,
+    NavTopComponent,
+    AdminComponent,
+    PersonneComponent,
+    ConnexionComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,15 +49,13 @@ import { MatCardModule } from '@angular/material';
     ReactiveFormsModule,
     MatDialogModule,
     BrowserAnimationsModule,
-    MatCardModule
-
+    MatCardModule,
   ],
-  providers: [{ provide: MatDialogRef, useValue: {} },
-    { provide: MAT_DIALOG_DATA, useValue: [] },
-    { provide: LOCALE_ID, useValue: 'fr-CA' }],
+  providers: [],
   bootstrap: [AppComponent],
   entryComponents: [
     CommentFormComponent,
+    ConnexionComponent
   ]
 })
 export class AppModule { }

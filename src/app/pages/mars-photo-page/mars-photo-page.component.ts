@@ -9,17 +9,16 @@ import { PhotoService } from '../../shared/services/photo.service';
 export class MarsPhotoPageComponent implements OnInit {
 
   allphotos;
-  hundredFirstPicture;
+  FirstsPictures;
 
   constructor(private photoService: PhotoService) { }
 
   ngOnInit() {
-      // this.photoService.getPicture().subscribe( (datas) => {
-      //   this.allphotos = datas;
-      //   this.hundredFirstPicture = this.allphotos.photos.slice(0, 20);
-      //   console.log(this.allphotos);
-      //   console.log(this.hundredFirstPicture);
-      // });
+      this.photoService.getPicture().subscribe( (datas) => {
+        this.allphotos = datas;
+        this.FirstsPictures = this.allphotos.photos.slice(102, 180);
+        console.log(this.FirstsPictures);
+      });
   }
 
 }

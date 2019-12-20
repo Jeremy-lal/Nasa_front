@@ -17,7 +17,7 @@ export class OpenCommentFormComponent implements OnInit {
   }
 
   openCommentForm(): void {
-    this.commentService.toUpdate = false;
+    this.commentService.toComment = false;
     const dialogRef = this.dialog.open(CommentFormComponent, {
       width: '550px',
     });
