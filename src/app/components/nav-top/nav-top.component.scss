@@ -1,8 +1,7 @@
-.container {
+section {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    border: 2px solid green;
+    padding: 1rem;
 }
 
 img {
@@ -17,14 +16,12 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 2px solid blue;
 }
 
 .connexion {
     width: 40%;
     display: flex;
     justify-content: flex-end;
-    border: 2px solid red;
 }
 
 i {

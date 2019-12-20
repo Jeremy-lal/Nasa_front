@@ -1,11 +1,9 @@
 <section>
-    <app-nav-top></app-nav-top>
-    <app-nav-bar></app-nav-bar>
 
-    <app-open-comment-form  *ngIf="(currentUser != undefined)"> </app-open-comment-form>
+    <app-open-comment-form *ngIf="(currentUser != undefined)"> </app-open-comment-form>
 
     <div class="containerComment" *ngFor='let comment of comments'>
-        <app-comment [comment]="comment" ></app-comment>
+        <app-comment [comment]="comment"></app-comment>
 
     </div>
 

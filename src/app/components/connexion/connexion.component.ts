@@ -28,6 +28,7 @@ export class ConnexionComponent implements OnInit {
       this.userService.getUserById(1).subscribe((data) => {
         this.currentUser = data;
         console.log(this.connectForm.value.pwd);
+        console.log(this.currentUser);
         this.userService.currentUser = this.currentUser;
       });
     } else if (this.connectForm.value.pwd === 'luc') {
@@ -35,6 +36,7 @@ export class ConnexionComponent implements OnInit {
         this.currentUser = data;
         console.log(this.connectForm.value.pwd);
         this.userService.currentUser = this.currentUser;
+        console.log(this.currentUser);
       });
     }
     this.dialogRef.close();

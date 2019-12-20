@@ -3,17 +3,10 @@ section {
     flex-direction: column;
     justify-content: center;
     padding-bottom: 2rem;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-section app-nav-bar, section .marge {
-    margin: 0 10% 0 10%;
-}
-section app-nav-top {
-    padding: 1rem 0 0 1rem;
-}
-app-nav-top {
-    margin-bottom: 2rem;
-}
 
 h1 {
     font-size: 3rem;
@@ -39,7 +32,7 @@ p {
 }
 img {
     border-radius: 5px;
-    margin: 1rem 0 1rem 0;
+    margin: 2rem;
     align-self: center;
 }
 

@@ -4,22 +4,9 @@ section {
     justify-content: center;
 }
 
-section app-nav-bar, section .marge {
-    margin: 0 10% 0 10%;
-}
-section app-nav-top {
-    padding: 1rem 0 0 1rem;
-}
-app-nav-top {
-    margin-bottom: 2rem;
-}
-.marge {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 img {
     margin-top: 3rem;
-    width: 70%;
+    width: 60%;
     border-radius: 20px;
+    align-self: center;
 }
