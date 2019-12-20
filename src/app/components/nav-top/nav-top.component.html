@@ -6,6 +6,6 @@
     <div class="connexion">
         <i class="material-icons" routerLink="/admin" *ngIf="(currentUser?.status)">dashboard</i>
         <i class="material-icons" (click)="connect()">perm_identity</i>
-        <i class="material-icons" routerLink="/">power_settings_new</i>
+        <i class="material-icons" (click)="disconnect()">power_settings_new</i>
     </div>
 </section>

@@ -21,6 +21,7 @@ export class OpenCommentFormComponent implements OnInit {
     const dialogRef = this.dialog.open(CommentFormComponent, {
       width: '550px',
     });
+
   }
 
 }

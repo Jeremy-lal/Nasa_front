@@ -24,9 +24,22 @@ img {
     justify-content: flex-end;
 }
 
-i {
+.conn {
+    display: flex;
+    flex-direction: row;
+}
+.conn i {
+    margin-right:0rem;
+    cursor: pointer;
+}
+i, p {
     font-size: 3rem;
     margin: 1.5rem;
     color: white;
     cursor: pointer;
+  }
+
+  p {
+      font-size: 1.5rem;
+      padding-top: 0.7rem;
   }

@@ -16,7 +16,7 @@ export class MarsPhotoPageComponent implements OnInit {
   ngOnInit() {
       this.photoService.getPicture().subscribe( (datas) => {
         this.allphotos = datas;
-        this.FirstsPictures = this.allphotos.photos.slice(102, 180);
+        this.FirstsPictures = this.allphotos.photos.slice(140, 170);
         console.log(this.FirstsPictures);
       });
   }

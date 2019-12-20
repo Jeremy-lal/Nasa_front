@@ -1,8 +1,10 @@
+import { NavTopComponent } from './../nav-top/nav-top.component';
 import { UserService } from 'src/app/shared/services/user.service';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { MatDialogRef } from '@angular/material';
 import { User } from 'src/app/shared/models/user';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-connexion',

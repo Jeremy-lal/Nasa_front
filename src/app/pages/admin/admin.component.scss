@@ -2,18 +2,11 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-section app-nav-bar, section .marge {
-    margin: 0 10% 0 10%;
-}
-section app-nav-top {
-    padding: 1rem 0 0 1rem;
-}
-app-nav-top {
-    margin-bottom: 2rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5rem;;
 }
 
 app-personne {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }

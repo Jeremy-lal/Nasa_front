@@ -7,7 +7,7 @@
         <mat-card-title> {{comment?.user.pseudo}}</mat-card-title>
         <mat-card-subtitle>{{comment?.createAt | date:'M/d/yy, h:mm a'}}</mat-card-subtitle>
       </div>
-      <div class="logo" *ngIf="(true) || (currentUser?.status)">
+      <div class="logo" *ngIf="(currentUser?.status)">
         <i class="material-icons">create</i>
         <i class="material-icons" (click)="deleteComment(comment?.id)">delete</i>
       </div>
